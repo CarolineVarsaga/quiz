@@ -1,0 +1,53 @@
+.img-container-highscore-page {
+  display: none;
+}
+
+.highscore-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: fontSize(lg);
+}
+
+.highscore-container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  @include flexCenter($fd: column);
+  gap: 1.1rem;
+  flex-wrap: wrap;
+
+  @include response(sm) {
+    height: 100%;
+    padding-bottom: 3rem;
+    margin-top: 0;
+    gap: 0;
+  }
+
+  .highscore-1to5,
+  .highscore-6to10 {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1rem 0;
+
+    @include response(sm) {
+      @include flexCenter($fd: column);
+      width: 100%;
+      font-size: fontSize(xs) * 0.7;
+      text-align: start;
+      margin: 0;
+      display: grid;
+    }
+  }
+
+  .highscore {
+    padding: 0.5rem 0;
+
+    span {
+      font-family: $font-roboto;
+    }
+  }
+}

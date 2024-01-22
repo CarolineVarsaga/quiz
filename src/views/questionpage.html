@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link id="page-favicon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAm9JREFUOE99k8trlFcYxn/n9p3JJDOTMVZNMqNtBal0V1C7ceGmK2nFlSBd+T+Ie/8Icd2ui0JDoYvuCr2siwpe2kRNGJNOMmPm+75zLcmAF9L4cDbnPef58fCe8woOka/+yFQ3EVns35DZII/8PN28owOFvbNy7fOsUklKCak0OWWEECRtaCw/eM9zALC79lPOWzcIwUENISSkiVBojFZgG7TOrr7xHQAMf13MD//s0OttkkYeXzqMUeSmZDDocvrchIWLrw4HrK+cyGeujfnlVqbhE7FOKKVgTvLl7cSj7zr0rm58AHB/MW898fjBDnHboGtFkA7VFPxDhy/OZ05+OzgcsLnSy9svxvjfasTfH2GPH8NtDPBuhLySaC/N0rt+SAL3+NNcbbxm+MQTvtdoUUKzQ3JjYi3grKL9leDI+WPoE9PXeBOlfNbPcSdSDUrqv0rqGOmW8zxaGXL68hy72mGEpPjMYPuWxkKT4tRTsQ/Y/v14lhJCFfGjgNuM1I8d9Sr4sUAKiV3K2DOSRr+J7iaKWUut6mmCtR/mc6PbIJcBPxGU/9ZUq4Hd5440kSgtscuC1scS0zWotkXPKsIoTQGDH/s5yYAb1/gdT3gtmGzVTLYEhIgxBtPxNI5ailaBamls2zAsLr3twfr9xVzteNwoESY1cZzwFcQAQibMjEC3JHbGouY09qhm+ev1aQ/29PJeL4exww8DVeXxu5EcMiIKpEoIa1AzGa01ulMws2BY/ObFW8Ae5Ond+YxTuLLGVRGRMgSxP0hYgTKgCoNpGz65Mf3O/zuNK5dtXupnogKJIJHYWzFHLtxJ73n+A3DeF4UL9/4SAAAAAElFTkSuQmCC"
+        rel="icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- HTML Meta Tags -->
+    <title>Rubber duck quiz</title>
+    <meta name="description" content="A quiz made by and for rubber ducks. Easy but humourus questions.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url"
+        content="https://medieinstitutet.github.io/fed23d-javascript-grundkurs-gruppuppgift-kumquaterna/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rubber duck quiz">
+    <meta property="og:description" content="A quiz made by and for rubber ducks. Easy but humourus questions.">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="medieinstitutet.github.io">
+    <meta property="twitter:url"
+        content="https://medieinstitutet.github.io/fed23d-javascript-grundkurs-gruppuppgift-kumquaterna/">
+    <meta name="twitter:title" content="Rubber duck quiz">
+    <meta name="twitter:description" content="A quiz made by and for rubber ducks. Easy but humourus questions.">
+    <meta name="twitter:image" content="">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <script type="module" src="../questionpage.js"></script>
+</head>
+
+<body>
+    <div class="app" id="app">
+        <header class="header">
+            <a href="../../index.html" class="abort-quiz-button button-effect">
+                <img src="../assets/images/ducks-with-signs/AbortQuizDuck.webp" alt="Duck with sign saying 'Abort Quiz'"
+                    width="130" height="100" loading="lazy">
+            </a>
+
+            <div class="timer">00:00</div>
+
+            <div class="points">
+                <p class="points-counter">Points: <span class="number">0</span></p>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-content-container">
+                <div class="wrapper-container">
+                    <div class="img-container">
+                        <img src="../../img/rubber-duck-bathtub-640x420.jpg"
+                            alt="rubber ducks on the edge of a swimming pool">
+                    </div>
+
+                    <div class="content-container">
+
+                        <div class="question-text-container"></div>
+
+                        <button class="next-button button-effect" id="nextButton" aria-label="next-button">
+                            <img src="../assets/images/ducks-with-signs/NextDuck.webp"
+                                alt="Duck with sign saying 'next'" width="130" height="100" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2023/2024 Caroline Vårsaga, Ellinor Friström, Jari Leminaho, Linda Leminaho, Victoria Lundberg
+        </footer>
+    </div>
+</body>
+
+</html>
